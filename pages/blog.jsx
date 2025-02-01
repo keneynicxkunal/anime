@@ -77,8 +77,8 @@ function Blog() {
   {/* Header End */}
   {/* Normal Breadcrumb Begin */}
   <section
-    className="normal-breadcrumb set-bg"
-    data-setbg="img/normal-breadcrumb.jpg"
+    div className="normal-breadcrumb set-bg" 
+    style={{ backgroundImage: `url(${require('../images/normal-breadcrumb.jpg')})` }}
   >
     <div className="container">
       <div className="row">
@@ -100,8 +100,8 @@ function Blog() {
           <div className="row">
             <div className="col-lg-12">
               <div
-                className="blog__item set-bg"
-                data-setbg="img/blog/blog-1.jpg"
+                div className="blog__item set-bg" 
+                style={{ backgroundImage: `url(${require('../images/blog/blog-1.jpg')})` }}
               >
                 <div className="blog__item__text">
                   <p>
@@ -115,8 +115,8 @@ function Blog() {
             </div>
             <div className="col-lg-6 col-md-6 col-sm-6">
               <div
-                className="blog__item small__item set-bg"
-                data-setbg="img/blog/blog-4.jpg"
+                div className="blog__item small__item set-bg" 
+                style={{ backgroundImage: `url(${require('../images/blog/blog-4.jpg')})` }}
               >
                 <div className="blog__item__text">
                   <p>
@@ -130,8 +130,8 @@ function Blog() {
             </div>
             <div className="col-lg-6 col-md-6 col-sm-6">
               <div
-                className="blog__item small__item set-bg"
-                data-setbg="img/blog/blog-5.jpg"
+                div className="blog__item small__item set-bg" 
+                style={{ backgroundImage: `url(${require('../images/blog/blog-5.jpg')})` }}
               >
                 <div className="blog__item__text">
                   <p>
@@ -145,8 +145,8 @@ function Blog() {
             </div>
             <div className="col-lg-12">
               <div
-                className="blog__item set-bg"
-                data-setbg="img/blog/blog-7.jpg"
+                div className="blog__item set-bg" 
+                style={{ backgroundImage: `url(${require('../images/blog/blog-7.jpg')})` }}
               >
                 <div className="blog__item__text">
                   <p>
@@ -162,8 +162,8 @@ function Blog() {
             </div>
             <div className="col-lg-6 col-md-6 col-sm-6">
               <div
-                className="blog__item small__item set-bg"
-                data-setbg="img/blog/blog-10.jpg"
+                div className="blog__item small__item set-bg" 
+                style={{ backgroundImage: `url(${require('../images/blog/blog-10.jpg')})` }}
               >
                 <div className="blog__item__text">
                   <p>
@@ -177,8 +177,8 @@ function Blog() {
             </div>
             <div className="col-lg-6 col-md-6 col-sm-6">
               <div
-                className="blog__item small__item set-bg"
-                data-setbg="img/blog/blog-11.jpg"
+                div className="blog__item small__item set-bg" 
+                style={{ backgroundImage: `url(${require('../images/blog/blog-11.jpg')})` }}
               >
                 <div className="blog__item__text">
                   <p>
@@ -196,8 +196,8 @@ function Blog() {
           <div className="row">
             <div className="col-lg-6 col-md-6 col-sm-6">
               <div
-                className="blog__item small__item set-bg"
-                data-setbg="img/blog/blog-2.jpg"
+                div className="blog__item small__item set-bg" 
+                style={{ backgroundImage: `url(${require('../images/blog/blog-2.jpg')})` }}
               >
                 <div className="blog__item__text">
                   <p>
@@ -211,8 +211,8 @@ function Blog() {
             </div>
             <div className="col-lg-6 col-md-6 col-sm-6">
               <div
-                className="blog__item small__item set-bg"
-                data-setbg="img/blog/blog-3.jpg"
+                div className="blog__item small__item set-bg" 
+                style={{ backgroundImage: `url(${require('../images/blog/blog-3.jpg')})` }}
               >
                 <div className="blog__item__text">
                   <p>
@@ -226,8 +226,8 @@ function Blog() {
             </div>
             <div className="col-lg-12">
               <div
-                className="blog__item set-bg"
-                data-setbg="img/blog/blog-6.jpg"
+                div className="blog__item set-bg" 
+                style={{ backgroundImage: `url(${require('../images/blog/blog-6.jpg')})` }}
               >
                 <div className="blog__item__text">
                   <p>
@@ -241,8 +241,8 @@ function Blog() {
             </div>
             <div className="col-lg-6 col-md-6 col-sm-6">
               <div
-                className="blog__item small__item set-bg"
-                data-setbg="img/blog/blog-8.jpg"
+                div className="blog__item small__item set-bg" 
+                style={{ backgroundImage: `url(${require('../images/blog/blog-8.jpg')})` }}
               >
                 <div className="blog__item__text">
                   <p>
@@ -256,8 +256,8 @@ function Blog() {
             </div>
             <div className="col-lg-6 col-md-6 col-sm-6">
               <div
-                className="blog__item small__item set-bg"
-                data-setbg="img/blog/blog-9.jpg"
+                div className="blog__item small__item set-bg" 
+                style={{ backgroundImage: `url(${require('../images/blog/blog-9.jpg')})` }}
               >
                 <div className="blog__item__text">
                   <p>
@@ -271,8 +271,8 @@ function Blog() {
             </div>
             <div className="col-lg-12">
               <div
-                className="blog__item set-bg"
-                data-setbg="img/blog/blog-12.jpg"
+                div className="blog__item set-bg" 
+                style={{ backgroundImage: `url(${require('../images/blog/blog-12.jpg')})` }}
               >
                 <div className="blog__item__text">
                   <p>
