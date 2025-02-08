@@ -1,5 +1,8 @@
 import React from 'react'
+import { useState } from 'react';
 // import { useEffect } from 'react';
+import { useRef } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import OwlCarousel from 'react-owl-carousel';
 import ReactOwlCarousel from 'react-owl-carousel';
 // import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -12,27 +15,40 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'owl.carousel';
 
 function Homepage() {
-  // useEffect(() => {
-  //   // Initialize OwlCarousel
-  //   const owlCarousel = $('.hero__slider').owlCarousel({
-  //     loop: true,
-  //     margin: 0,
-  //     items: 1,
-  //     dots: true,
-  //     nav: true,
-  //     navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-  //     animateOut: 'fadeOut',
-  //     animateIn: 'fadeIn',
-  //     smartSpeed: 1200,
-  //     autoHeight: false,
-  //     autoplay: true
-  //   });
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
-  //   // Cleanup function to destroy OwlCarousel on component unmount
-  //   return () => {
-  //     owlCarousel.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
-  //   };
-  // }, []);
+  const toggleSearch = () => {
+    setIsSearchOpen(!isSearchOpen);
+  };
+  const navRef = useRef();
+
+	const showNavbar = () => {
+		navRef.current.classList.toggle(
+			"responsive_nav"
+		);
+	};
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+  useEffect(() => {
+    // Initialize OwlCarousel
+    const owlCarousel = $('.hero__slider').owlCarousel({
+      loop: true,
+      margin: 0,
+      items: 1,
+      dots: true,
+      nav: true,
+      navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
+      smartSpeed: 1200,
+      autoHeight: false,
+      autoplay: true
+    });
+
+   
+    
+  }, []);
   return (
     <>
     <section className="hero">
@@ -111,22 +127,44 @@ function Homepage() {
                   <a href="./MarketStrategyPage">super cion</a>
                 </li>
               </ul>
+              <button
+					         className="nav-btn nav-close-btn"
+					         onClick={showNavbar}>
+					        <FaTimes />
+				      </button>
             </nav>
+            <button
+				        className="nav-btn"
+				        onClick={showNavbar}>
+				        <FaBars />
+			      </button>
           </div>
         </div>
         <div className="col-lg-2">
-          <div className="header__right">
-            <a href="#" className="search-switch">
-              <span className="icon_search" />
-            </a>
-            <a href="./login">
-              <span className="icon_profile" />
-            </a>
+              <div className="header__right">
+                <a href="#" className="search-switch" onClick={toggleSearch}>
+                  <span className="icon_search" />
+                </a>
+                <a href="./login">
+                  <span className="icon_profile" />
+                </a>
           </div>
         </div>
       </div>
       <div id="mobile-menu-wrap" />
     </div>
+    {/* Search Model */}
+    <div className={`search-model ${isSearchOpen ? 'active' : ''}`}>
+        <div className="h-100 d-flex align-items-center justify-content-center">
+          <div className="search-close-switch" onClick={toggleSearch}>
+            <i className="icon_close" />
+          </div>
+          <form className="search-model-form">
+            <input type="text" id="search-input" placeholder="Search here....." />
+          </form>
+        </div>
+      </div>
+    
   </header>
   {/* Header End */}
   {/* Hero Section Begin */}
