@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
 const MarketStrategyPage = () => {
-  const [superCoins, setSuperCoins] = useState(150); // User's Super Coins
-  const [discount, setDiscount] = useState(0); // Discount earned
-  const [productPrice, setProductPrice] = useState(0); // Price of the product
-  const [message, setMessage] = useState(''); // Feedback message
+  const [superCoins, setSuperCoins] = useState(150); 
+  const [discount, setDiscount] = useState(0); 
+  const [productPrice, setProductPrice] = useState(0); 
+  const [message, setMessage] = useState(''); 
 
   // Function to handle Super Coins investment
   const investSuperCoins = () => {
