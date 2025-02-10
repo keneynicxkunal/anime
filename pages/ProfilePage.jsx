@@ -12,11 +12,11 @@ const ProfilePage = () => {
     ],
   });
 
-  const [isEditing, setIsEditing] = useState(false); // State to toggle edit mode
-  const [tempName, setTempName] = useState(user.name); // Temporary state for name during editing
-  const [tempEmail, setTempEmail] = useState(user.email); // Temporary state for email during editing
+  const [isEditing, setIsEditing] = useState(false); 
+  const [tempName, setTempName] = useState(user.name); 
+  const [tempEmail, setTempEmail] = useState(user.email);
 
-  // Simulate fetching user data from an API
+  
   useEffect(() => {
     setTimeout(() => {
       setUser((prevUser) => ({
