@@ -107,6 +107,77 @@ ol {
 	padding: 0;
 	margin: 0;
 }
+.header__menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .header__menu ul {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .header__menu ul li {
+	position: relative;
+  }
+  
+  .header__menu ul li a {
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #000;
+  }
+  
+  .header__menu ul li .dropdown {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #fff;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+  }
+  
+  .header__menu ul li:hover .dropdown {
+	display: block;
+  }
+  
+  .nav-btn {
+	display: none;
+	background: none;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+  }
+  
+  .responsive_nav {
+	display: flex !important;
+	flex-direction: column;
+	position: absolute;
+	top: 60px;
+	right: 0;
+	background-color: #fff;
+	width: 100%;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+  }
+  
+  @media (max-width: 768px) {
+	.header__menu {
+	  display: none;
+	}
+  
+	.nav-btn {
+	  display: block;
+	}
+  
+	.responsive_nav {
+	  display: flex;
+	}
+  }
 
 /*---------------------
   Helper CSS
@@ -321,6 +392,262 @@ ol {
 	-ms-flex-pack: center;
 	justify-content: center;
 }
+/************** 
+Market strategy 
+***************/
+.market-strategy-page {
+	padding: 20px;
+	font-family: Arial, sans-serif;
+	max-width: 800px;
+	margin: 0 auto;
+  }
+  
+  .strategy-section {
+	margin-bottom: 30px;
+	background-color: #f9f9f9;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .strategy-section h2 {
+	color: #333;
+	margin-bottom: 15px;
+	font-size: 24px;
+	border-bottom: 2px solid #4caf50;
+	padding-bottom: 10px;
+  }
+  
+  .strategy-section ul {
+	list-style-type: disc;
+	margin-left: 20px;
+	padding-left: 10px;
+  }
+  
+  .strategy-section ul li {
+	margin-bottom: 10px;
+	font-size: 16px;
+	color: #555;
+  }
+  
+  .strategy-section p {
+	font-size: 16px;
+	color: #555;
+	line-height: 1.6;
+  }
+  
+  .interactive-section {
+	background-color: #f9f9f9;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .super-coins-balance {
+	margin-bottom: 15px;
+  }
+  
+  .super-coins-balance p {
+	font-size: 18px;
+	color: #333;
+  }
+  
+  .product-input {
+	margin-bottom: 15px;
+  }
+  
+  .product-input label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: #333;
+  }
+  
+  .product-input input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+  }
+  
+  .invest-button {
+	background-color: #4caf50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+  }
+  
+  .invest-button:hover {
+	background-color: #45a049;
+  }
+  
+  .discount-result {
+	margin-top: 15px;
+	padding: 10px;
+	background-color: #e8f5e9;
+	border-radius: 4px;
+  }
+  
+  .discount-result p {
+	font-size: 16px;
+	color: #333;
+	margin: 5px 0;
+  }
+  
+  .message {
+	margin-top: 15px;
+	color: #d32f2f;
+	font-weight: bold;
+	font-size: 16px;
+  }
+  
+/************** 
+ProfilePage  
+***************/
+.edit-btn, .save-btn, .cancel-btn, .add-coins-btn {
+	padding: 8px 16px;
+	margin: 5px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  .edit-btn {
+	background-color: #4CAF50;
+	color: white;
+  }
+  
+  .save-btn {
+	background-color: #2196F3;
+	color: white;
+  }
+  
+  .cancel-btn {
+	background-color: #f44336;
+	color: white;
+  }
+  
+  .add-coins-btn {
+	background-color: #FFD700;
+	color: black;
+  }
+  
+  .profile-page {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* User Info Section */
+  .user-info {
+    margin-bottom: 30px;
+  }
+  
+  .user-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .user-info p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .add-coins-btn {
+    background-color: #ffeb3b;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .add-coins-btn:hover {
+    background-color: #fdd835;
+  }
+  
+  /* Order History Section */
+  .order-history {
+    overflow-x: auto; /* Enable horizontal scrolling for small screens */
+  }
+  
+  .order-history h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table th,
+  table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .status.delivered {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .status.cancelled {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .profile-page {
+      margin: 10px;
+      padding: 10px;
+    }
+  
+    .user-info h1 {
+      font-size: 20px;
+    }
+  
+    .user-info p {
+      font-size: 14px;
+    }
+  
+    .add-coins-btn {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+  
+    table th,
+    table td {
+      padding: 8px;
+    }
+  
+    .status {
+      font-size: 12px;
+    }
+  }
 
 /*---------------------
   Header
@@ -362,7 +689,7 @@ ol {
 	top: 62px;
 	opacity: 1;
 	visibility: visible;
-}
+} */
 
 .header__menu ul li:hover .dropdown li a {
 	background: transparent;
@@ -415,7 +742,7 @@ ol {
 	position: relative;
 	font-size: 17px;
 	top: 2px;
-}
+} */
 
 .header__right {
 	text-align: right;
@@ -1221,8 +1548,8 @@ ol {
 
 .anime__video__player .plyr__controls .plyr__controls__item.plyr__progress__container {
 	position: absolute;
-	left: 26px;
-	bottom: 45px;
+	left: 20px;
+	bottom: 20px;
 	width: calc(100% - 60px);
 }
 
@@ -1252,7 +1579,7 @@ ol {
 .anime__video__player .plyr__controls .plyr__controls__item.plyr__time {
 	position: absolute;
 	left: 106px;
-	bottom: 12px;
+	bottom: 20px;
 }
 
 .anime__video__player .plyr__control--overlaid {
@@ -1262,7 +1589,7 @@ ol {
 
 .anime__video__player .plyr__control--overlaid svg {
 	height: 60px;
-	width: 50px;
+	width: 10px;
 }
 
 .anime__details__episodes {
@@ -1287,6 +1614,7 @@ ol {
 	color: #000000;
 	background: #ffffff;
 }
+
 
 /*---------------------
   Breadcrumb
@@ -2131,7 +2459,51 @@ ol {
 		padding-left: 0;
 	}
 }
-
+/* nav baar Mobile = 480px */
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+	display: none;
+	cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 991px) {
+	.header__nav {
+	  display: none;
+	  position: absolute;
+	  top: 60px;
+	  left: 0;
+	  width: 100%;
+	  background: #fff;
+	  z-index: 1000;
+	}
+  
+	.header__nav.active {
+	  display: block;
+	}
+  
+	.header__menu {
+	  flex-direction: column;
+	}
+  
+	.header__menu ul {
+	  flex-direction: column;
+	}
+  
+	.header__menu li {
+	  margin: 10px 0;
+	}
+  
+	.mobile-menu-toggle {
+	  display: block;
+	}
+  
+	.header__right {
+	  display: flex;
+	  align-items: center;
+	  justify-content: flex-end;
+	}
+  }
 /* Wide Mobile = 480px */
 
 @media only screen and (max-width: 767px) {
@@ -2272,7 +2644,58 @@ ol {
 		width: 100%;
 	}
 }
-
+.search-model {
+	visibility: hidden; /* Hide the search bar initially */
+	opacity: 0; /* Make it fully transparent */
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.9);
+	z-index: 9999;
+	transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition for opacity and visibility */
+  }
+  
+  .search-model.active {
+	visibility: visible; /* Show the search bar */
+	opacity: 1; /* Make it fully visible */
+  }
+  
+  .search-model-form {
+	position: relative;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	top: 50%; /* Center the form vertically */
+	transform: translateY(-50%); /* Adjust for exact centering */
+  }
+  
+  .search-model-form input {
+	width: 100%;
+	font-size: 16px;
+	padding: 15px;
+	border: none;
+	border-bottom: 2px solid #fff;
+	background: transparent;
+	color: #fff;
+	outline: none; /* Remove the default input outline */
+  }
+  
+  .search-close-switch {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	color: #fff;
+	font-size: 24px;
+	cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+	.search-model-form {
+	  padding: 0 20px;
+	}
+  }
 /* Small Device = 320px */
 
 @media only screen and (max-width: 479px) {
