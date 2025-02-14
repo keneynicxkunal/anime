@@ -204,7 +204,6 @@ function singup() {
     </div>
   </div>
   {/* Search model end */}
-  {/* Js Plugins */}
 </>
 
   )
