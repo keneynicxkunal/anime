@@ -3,8 +3,6 @@ import React from 'react'
 function BlogDetails() {
   return (
     <>
-  {/* Page Preloder */}
-  {/* <div id="preloder">
     <div className="loader" />
   </div> */}
   {/* Header Section Begin */}
