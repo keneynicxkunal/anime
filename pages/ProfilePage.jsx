@@ -21,7 +21,7 @@ const ProfilePage = () => {
     setTimeout(() => {
       setUser((prevUser) => ({
         ...prevUser,
-        superCoins: 150, // Update super coins after fetching
+        superCoins: 150, 
       }));
     }, 1000);
   }, []);
