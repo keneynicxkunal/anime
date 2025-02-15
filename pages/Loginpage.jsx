@@ -3,10 +3,6 @@ import React from 'react'
 export default function Loginpage() {
   return (
     <>
-  {/* Page Preloder */}
-  {/* <div id="preloder">
-    <div className="loader" />
-  </div> */}
   {/* Header Section Begin */}
   <header className="header">
     <div className="container">
