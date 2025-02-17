@@ -3,8 +3,6 @@ import React from 'react'
 function BlogDetails() {
   return (
     <>
-    <div className="loader" />
-  </div> */}
   {/* Header Section Begin */}
   <header className="header">
     <div className="container">
