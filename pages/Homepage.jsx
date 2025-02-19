@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from 'react';
-// import { useEffect } from 'react';
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import OwlCarousel from 'react-owl-carousel';
