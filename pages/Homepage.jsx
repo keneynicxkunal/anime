@@ -27,24 +27,24 @@ function Homepage() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
   useEffect(() => {
-    // Initialize OwlCarousel
-    const owlCarousel = $('.hero__slider').owlCarousel({
-      loop: true,
-      margin: 0,
-      items: 1,
-      dots: true,
-      nav: true,
-      navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-      animateOut: 'fadeOut',
-      animateIn: 'fadeIn',
-      smartSpeed: 1200,
-      autoHeight: false,
-      autoplay: true
-    });
+  //   // Initialize OwlCarousel
+  //   const owlCarousel = $('.hero__slider').owlCarousel({
+  //     loop: true,
+  //     margin: 0,
+  //     items: 1,
+  //     dots: true,
+  //     nav: true,
+  //     navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+  //     animateOut: 'fadeOut',
+  //     animateIn: 'fadeIn',
+  //     smartSpeed: 1200,
+  //     autoHeight: false,
+  //     autoplay: true
+  //   });
 
    
     
-  }, []);
+  // }, []);
   return (
     <>
     <section className="hero">
